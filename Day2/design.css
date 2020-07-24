@@ -1,0 +1,33 @@
+.heading {
+    color: violet;
+}
+h2 {
+    color: blue;
+    text-transform: uppercase;
+    text-decoration-line: underline;
+
+}
+p {
+    font-size: 20px;
+    text-align: justify;
+}
+.paragraph1 {
+    color: rgb(41, 50, 100);
+}
+.paragraph2 {
+    color: rgb(179, 104, 55);
+}
+.paragraph3 {
+    color: rgb(136, 136, 19);
+}
+.paragraph4 {
+    color: lightblue;
+}
+body {
+    font-family: sans-serif;
+}
+div {
+    width: 500px;
+    background-color: lemonchiffon;
+    height: 30px;
+}
