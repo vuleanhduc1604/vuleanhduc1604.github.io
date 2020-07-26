@@ -1,0 +1,13 @@
+.container {
+    background-color:#34465C;
+    width: 80%;
+    margin: auto;
+    padding: 10px;
+    justify-content: space-around;
+    display: flex;
+}
+a {
+    color: white;
+    text-transform: uppercase;
+    font-family: sans-serif;
+}
