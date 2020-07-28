@@ -1,0 +1,41 @@
+.all {
+    display: flex;
+    flex-direction: row;  
+    flex-wrap: wrap; 
+}
+.red-box1 {
+    background-color: red;
+    height: 200px;
+    width: 800px;    
+}
+.blue-box1 {
+    background-color: blue;
+    height: 200px;
+    width: 400px;
+}
+.green-box1 {
+    background-color: green;
+    height: 200px;
+    width: 400px;
+}
+.red-box-space {
+    background-color: red;
+    height: 200px;
+    width: 800px;  
+    margin-right: 15px 
+}
+.red-box-column {
+    background-color: red;
+    height: 400px;
+    width: 350px;
+}
+.blue-box-column {
+    background-color: blue;
+    height: 400px;
+    width: 350px;
+}
+.green-box-column {
+    background-color: green;
+    height: 400px;
+    width: 350px;   
+}
