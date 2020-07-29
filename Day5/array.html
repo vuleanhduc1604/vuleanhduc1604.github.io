@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Array (mảng)
+        // Khai báo Array
+        // 1. Khai báo mảng rỗng
+        var emptyArray = []
+        // 2. Khai báo mảng có giá trị
+        var number = [1,2,3,5,6,7, true, "Hanoi"]
+        // 3. Lấy giá trị từ mảng (Lưu ý: Mảng có giá trị bắt đầu từ 0)
+        console.log(number[6])
+        // Lấy độ dài từ mảng
+        console.log(number.length)
+        // Lấy phần tử cuối cùng của mảng
+        console.log(number[number.length - 1])
+        // Thay đổi giá trị
+        number[0] = 9
+        number[number.length - 1] = false
+        console.log (number);
+        // join(): chuyển từ array -> string
+        var arrayConvertString = number.join("-")
+        console.log (arrayConvertString)
+        // split(): chuyển từ string -> array
+        var stringConvertArray = arrayConvertString.split("-")
+        console.log (stringConvertArray)
+        // Đảo ngược chữ
+        var name = "Nguyễn Văn A"
+        var name1 = name.split ("").reverse().join("")
+        console.log (name1)
+        // method array
+            // 1. Thêm phần tử (Thêm vào cuối mảng)
+            // nameArray.push(element)
+            number.push("Cần Thơ")
+            console.log (number)
+            // 2. Thêm phần tử vào đầu mảng
+            // nameArray.unshift(element)
+            number.unshift("TPHCM")
+            console.log (number)
+            // 3. Xóa phần tử ở cuối mảng
+            // nameArray.pop()
+            number.pop()
+            console.log (number)
+            // 4. Xóa phần tử ở đầu mảng
+            // nameArray.shift()
+            number.shift()
+            console.log(number)
+            // 5. Thêm, xóa phần tử: splice()
+                // Thêm phần tử:
+                number.splice(2, 0, "Quy Nhơn", "Cà Mau")
+                console.log (number)
+                // Xóa phần tử:
+                number.splice(2, 2)
+            // 6. Cộng array
+            var arr1 = [1,2,3]
+            var arr2 = [4,5,6]
+            // var arr3 = arr1.concat(arr2)
+            var arr3 = [...arr1,7,8,9,...arr2]
+            console.log(arr3)
+            // 7. For Loop
+            var sum = 0
+            for (var i = 0; i < arr3.length; i++) {
+                sum = sum + arr3[i]
+            }
+            console.log(sum)
+    </script>
+</body>
+</html>
