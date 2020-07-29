@@ -65,9 +65,17 @@
             // 7. For Loop
             var sum = 0
             for (var i = 0; i < arr3.length; i++) {
-                sum = sum + arr3[i]
+                if (arr3[i] % 2 != 0 && arr3[i] > 5) {
+                    sum = sum + arr3[i]
+                } else {
+                    console.log(arr3[i])
+                }
             }
             console.log(sum)
+            var sum2 = 0
+            for (var i = 1; i < arr3.length; i = i+2) {
+                sum2 = sum2 + arr3[i]
+            }
     </script>
 </body>
 </html>

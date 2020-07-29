@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object</title>
+</head>
+<body>
+    <script>
+        //Object
+        //Khai báo
+        var userEmpty = {}
+        var user = {
+            name : 'Nguyễn Văn A',
+            age: 23,
+            email : "abcd1234@gmail.com",
+        }
+        console.log(user);
+        var name = user.name;
+        var age = user.age;
+        var email = user.email;
+        console.log(name, age, email)
+        // Thay đổi property
+        user.name = "Bùi Thị B"
+        // Thêm property
+        user.city = "Hà Nội"
+        console.log (user)
+        // Xóa property
+        delete user.city
+        // for ... in để duyêt qua các key của object
+        for(var pro in user) {
+            console.log(user[pro]);
+            console.log("abc", typeof pro, pro)
+        }
+        // for ... of, forEach để duyệt qua các key của object
+    </script>
+</body>
+</html>
