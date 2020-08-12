@@ -80,4 +80,14 @@ for(i=1; i <= 100; i++){
 var sum = array.reduce(function(a,b){return a + b;}, 0);
 console.log(sum);
 //Bài 14. Cho 1 mảng các chuỗi. Viết hàm lọc ra các phần tử có độ dài lớn nhất.
-
+function findArrayWithMaxLength(arr) {
+    let maxLength = findMaxLength(arr)
+    let result = [];
+    for(let v of arr) {
+        if(v.length() == maxLength){
+            result.push(v);
+        }
+    }
+    return result
+}
+console.log(findArrayWithMaxLength('aba', 'ab', 'cd', 'bcd'))
