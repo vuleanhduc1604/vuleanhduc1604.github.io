@@ -1,0 +1,88 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.menu {
+    background-color: #34465C;
+    width: 100%;
+    margin: auto;
+    padding: 5px;
+}
+.menu ul li {
+    display: inline;
+    line-height: 25px;
+    position: relative;
+    padding-top: 3px;
+}
+img {
+    padding-right: 20px;
+    height: 27.97px;
+    width: 100px;
+}
+a {
+    text-decoration: none;
+    color: white;
+}
+.menu ul {
+    justify-content: space-around;
+    display: flex;
+    text-align: center;
+}
+.menu ul li > .sub-menu {
+    display: none;
+    position: absolute;
+    line-height: 50px;
+}
+.menu ul li:hover .sub-menu {
+    display: block;
+}
+.sub-menu {
+    background-color: transparent;
+    width: 200px;
+}
+.sub-menu li a {
+    display: block;
+    width: 100%;
+    background-color: gainsboro;
+    color: black;
+    box-shadow: black 50px;
+}
+.menu ul li a:hover {
+    color: grey
+}
+#sub-menu2 {
+    padding-right: 100px;
+    padding-left: -200px !important;
+}
+.link {
+    padding-top: 20px;
+    margin: 0px 34px 0px 24px;
+    color: black !important;
+    font-size: 20px;
+}
+.link:hover {
+    text-decoration: underline;
+    color: black !important;
+}
+.blog {
+    background-color: white;
+    width: 90%;
+    margin-left: 51px;
+    margin-top: 24px;
+}
+h6 {
+    background-color: lightgray;
+    width: 4.2%;
+    padding: 4px 4px 4px 4px;
+    border: 0.2px grey solid;
+    margin-left: 24px;
+    margin-bottom: 10px;
+}
+.para {
+    margin-left: 24px;
+    margin-bottom: .5rem;
+    line-height: 1.5;
+    color: #464646
+}

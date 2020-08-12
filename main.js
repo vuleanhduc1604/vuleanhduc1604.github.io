@@ -44,7 +44,7 @@ function reverseString(obj1) {
 reverseString("hello")
 //Bài 8. Cho 1 chuỗi, kiểm tra xem chuỗi đó có phải chuỗi đối xứng hay không (đọc xuôi hay ngược đều như nhau, không tính khoảng trắng, không phân biệt hoa thường), kết quả trả về true hoặc
 function checkReverse(obj1) {
-    var n = obj1.split(" ").join("").toLowerCase()
+    var n = obj1.split(" ").replace(" ", "").join("").toLowerCase().reverse()
     var m = obj1.toLowerCase()
     var result = ""
     if (m == n) {
@@ -54,12 +54,13 @@ function checkReverse(obj1) {
     }
     console.log(result)
 }
-checkReverse("Racecar")
+checkReverse("Race car")
 //Bài 9. Viết hàm tìm ra số nhỏ nhất trong mảng các số.
 function minNum(obj1) {
     var n = Math.min(obj1);
-    console.log(n)
+    console.log(type n)
 }
+minNum(2,1,3)
 //Bài 10. Viết hàm tìm ra số lớn thứ nhì trong mảng các số.
 function secondMax(obj1) {
     var arr = Object.values(obj1)
