@@ -1,0 +1,101 @@
+.image1 {
+    height: 286.1px;
+    width: 402.7px;
+    transition-duration: 1s;
+    margin: 0 auto;
+    display: block;
+    border: 1px solid black;
+}
+.image2 {
+    height: 286.1px;
+    width: 500px;
+    transition-duration: 1s;
+    margin: 0 auto;
+    display: block;
+    border: 1px solid black;
+}
+.caption {
+    border: 1px solid #DDDDDD;
+    text-align: left;
+    background-color: #EEEEEE;
+    padding: 4px 4px 3px 4px;
+    margin-left: 10px;
+    border-radius: 3px;
+    margin-top: 10px;
+}
+
+.caption img {
+    margin: 0px 0px 2px 0px;
+    padding: 0px;
+    border-top: 1px solid #ddd;
+    border-left: 1px solid #ddd;
+    border-bottom: 1px solid #c0c0c0;
+    border-right: 1px solid #c0c0c0;                 
+}
+.caption p.caption-text {
+    font-family: Arial, Sans-Serif;
+    font-size: 17px;
+    font-weight: normal;
+    line-height: 12px;
+    color: black;
+}
+.all {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+#caption-down {
+    margin-left: 220px;
+}
+.container {
+    width: 95%;
+    padding: 10px;
+    justify-content: space-around;
+    display: flex;
+    margin-top: 13px;
+    margin-left: 390px;
+    margin-right: 100px;
+    float: right;
+}
+a {
+    color: black;
+    text-transform: capitalize;
+    font-size: 24px;
+    text-decoration: none;
+    font-family: sans-serif
+}
+.caption p.cation-text:hover {
+    color: red;
+}
+.footer-para {
+    margin-left: 10px;
+    text-decoration: underline;
+}
+h2 {
+    margin-left: 20px;
+    font-size: 20px;
+}
+
+.image1:hover, .image2:hover {
+    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    z-index: 0;
+}
+.wrap {
+    overflow: hidden
+}
+a:hover {
+    color: #378B9B;
+    transition-duration: 0.5s;
+    animation-duration: 1s;
+    animation-name: gachchan;
+}
+@keyframes gachchan {
+    0% {
+        border-bottom: 3px solid transparent;
+    }
+    100% {
+        border-bottom: 3px solid #378B9B
+    }
+}
