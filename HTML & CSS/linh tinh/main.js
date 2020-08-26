@@ -67,7 +67,6 @@ function secondMax(obj1) {
     var max = Math.max.apply(null, arr); 
     arr.splice(arr.indexOf(max), 1); 
     return Math.max.apply(null, arr);
-    console.log(max); 
 };
 secondMax([1,2,3,4,5])
 //Bài 12. Tính tổng các số chia hết cho 5 từ 0 -> 100.
