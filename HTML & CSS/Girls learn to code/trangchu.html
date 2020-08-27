@@ -4,6 +4,69 @@
         <title>Trang chủ</title>
         <meta charset="utf-8"/>
         <link rel="stylesheet" type="text/css" href="trangchu.css"/>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cabin"/>
+        <style>
+        .container {
+            width: 95%;
+            padding: 10px;
+            justify-content: space-around;
+            display: flex;
+            margin-top: 13px;
+            margin-left: 390px;
+            margin-right: 100px;
+            float: right;
+        }
+        a {
+            color: black;
+            text-transform: capitalize;
+            font-size: 24px;
+            text-decoration: none;
+            font-family: sans-serif;
+            transition-duration: 0.5s;
+        }
+        .description {
+            font-size: 30px;
+            margin-top: 0px;
+            font-family: 'Cabin'
+        }
+        a:hover {
+            color: #378B9B;
+            transition-duration: 0.5s;
+            animation-duration: 1s;
+            animation-name: gachchan;
+        }
+        .img {
+            width: 270px;
+        }
+        @keyframes gachchan {
+            0% {
+                border-bottom: 3px solid transparent;
+            }
+            100% {
+                border-bottom: 3px solid #378B9B
+            }
+        }
+        .center {
+            text-align: center;
+        }
+        .box {
+            width: 20%;
+            margin: 15px;
+            box-shadow: 0 0 3px rgba(0,0,0,0.3);
+            overflow: hidden;
+            transition: 0.5s
+        }
+        h2 {
+            font-family: 'Cabin';
+            color: #378B9B
+        }
+        .sub-description {
+            font-family: 'Cabin';
+            font-size: 28px;
+            font-weight: bold;
+            margin-bottom: 30px;
+        }
+        </style>
     </head>
     <body>
         <div style="display: flex">
@@ -20,14 +83,15 @@
             <div class="img">
                 <img style="margin-left: 70px;" src="https://scontent.fhan4-1.fna.fbcdn.net/v/t1.0-9/117908034_326549571881399_4614732497758321710_o.jpg?_nc_cat=104&_nc_sid=730e14&_nc_ohc=wEEP9NFcO1oAX_E1eC6&_nc_ht=scontent.fhan4-1.fna&oh=aec2d38293ec404ba0fc136aeb4d494c&oe=5F643B57" alt="image"/>
             </div>
-            <h2 class="center">Các gói trải nghiệm của chúng tôi</h2>
+            <h2 class="center">CÁC GÓI SẢN PHẨM TRẢI NGHIỆM</h2>
             <div class="box">
                 <div>
-                    <img class="img" src="https://scontent.fhan4-1.fna.fbcdn.net/v/t1.0-9/117445450_326561208546902_1975176290077024530_n.jpg?_nc_cat=104&_nc_sid=730e14&_nc_ohc=ZhT0oJg_SogAX_Uk1hG&_nc_ht=scontent.fhan4-1.fna&oh=dd6031db43c5f3b57ee08634f18355a4&oe=5F61E3DB" alt="image"/>
+                    <img class="img" src="https://scontent.fhan4-1.fna.fbcdn.net/v/t1.0-9/s960x960/117825945_332396151296741_4433696330650530520_o.jpg?_nc_cat=105&_nc_sid=8024bb&_nc_ohc=zVXhB9t_vKEAX9LXmRE&_nc_ht=scontent.fhan4-1.fna&tp=7&oh=2685f8dde73d342eeb48d701be38df7e&oe=5F6BB207" alt="image"/>
                 </div>
-                <div class="description" style="font-weight: bold;">Trải nghiệm tư vấn khách hàng</div>
-                <div class="description" style="font-weight: bold;">2 ngày</div>
-                <div class="description" style="font-weight: bold;">800.000 đ</div>
+                <div class="description center">Trải nghiệm</div>
+                <div class="sub-description center">"Work From Home"</div>
+                <div class="center">More
+                </div>
             </div>
         </div>
     </body>
