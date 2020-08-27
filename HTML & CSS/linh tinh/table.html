@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        td,table {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+        td {
+            text-align: center;
+            padding: 0px 10px 0px 10px;
+        }
+        tr:hover {
+            background-color: rgb(77, 77, 77);
+            color: white;;
+            cursor: pointer;
+        }       
+        img {
+            height: 60px;
+            width: 60px;
+        } 
+    </style>
+</head>
+<body>
+    <h2>Table</h2>
+    <table>
+        <thead>
+            <tr>
+                <td>STT</td>
+                <td>Tên sản phẩm</td>
+                <td>Hình ảnh</td>
+                <td>Công ty tiêu thụ</td>
+                <td>Số lượng</td>
+                <td>Giá tiền mỗi cân</td>
+                <td>Giá tiền tổng cộng</td>
+                <td>Phương thức vận chuyển</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Chuối</td>
+                <td><img src="https://pngriver.com/wp-content/uploads/2018/03/Download-Banana-Fruit-PNG-For-Designing-Purpose-1000x750.png" alt="banana"/></td>
+                <td>Vinmart Hà Nội</td>
+                <td>200</td>
+                <td>20.000/buồng</td>
+                <td>4.000.000</td>
+                <td>Đường bộ</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Táo envy Mỹ</td>
+                <td><img src="https://1ajr47ezb8936tnbt18gybf3-wpengine.netdna-ssl.com/wp-content/uploads/2018/02/BatlowProduct_752x752_RedDelicious-458x458.png" alt="apple"/></td>
+                <td>Big C Đà Nẵng</td>
+                <td>20</td>
+                <td>250.000/cân</td>
+                <td>5.000.000</td>
+                <td>Đường thủy</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Dell Inspiron N3481</td>
+                <td><img src="https://laptopxachtay.com.vn/Images/Products/dell-inspiron-3593-i7-1065g7-8gb-512gb-ssd-mx230-2gb-15-6-fhd-win-10-70197460-silver-_38879_4.png" alt="Dell Inspiron"/></td>
+                <td>FPT Shop</td>
+                <td>500</td>
+                <td>10.090.000</td>
+                <td>504.500.000</td>
+                <td>Đường bộ</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Lenovo Yoga C940-14" FHD</td>
+                <td><img src="https://laptopg7.vn/images/thumbnails/400/400/detailed/101/Lenovo-Yoga-C940-15-01-1576312787.png.webp" alt="lenovo-yoga"/></td>
+                <td>Laptopg7</td>
+                <td>90</td>
+                <td>32.590.000</td>
+                <td>2.933.100.000</td>
+                <td>Đường bộ</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>HP 15s-du1040TX</td>
+                <td><img src="https://tuanthanh.com.vn/pic/products/15s-du-silver637109888989351504.png.ashx" alt="HP"/></td>
+                <td>FPT Shop</td>
+                <td>50</td>
+                <td>18.090.000</td>
+                <td>904.500.000</td>
+                <td>Đường bộ</td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>Apple Macbook Air 2020 i5</td>
+                <td><img src="https://cdn.tgdd.vn/Products/Images/44/71281/apple-macbook-pro-2015-mf839zp-a-i5-5257u-8gb-128g-450x300-450x300.png" alt="Apple Macbook"/></td>
+                <td>Thegioididong</td>
+                <td>20</td>
+                <td>31.990.000</td>
+                <td>639.800.000</td>
+                <td>Đường hàng không</td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td>Huawei Nova 7 Pro</td>
+                <td><img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxISEhIQEhIVFRUVFRUVFRUVEA8QDxUQFREWFhUWFRUYHSggGBolGxUVITEhJSkrLi4vFx81ODMsNygtLi0BCgoKDg0OGxAQFS4dHR0tLS0tLS0rLS0rKy0tKy0tLS0tLS0tLSstLS0tLS0tLS0tKy0tLS0tKy0tLy0tLS0tMf/AABEIAOEA4QMBIgACEQEDEQH/xAAcAAABBQEBAQAAAAAAAAAAAAAAAgMEBQYBBwj/xABOEAABAwICAwgLDQYFBQAAAAABAAIDBBEhMQUSQQYHEyJRYXG0MjM0c4GRkqGx0dIWF1JTVHKDk6Oys8HwFCMkQkThQ2JjdMJkgoSi8f/EABkBAQADAQEAAAAAAAAAAAAAAAABAgMEBf/EACsRAQEAAgEDAwEHBQAAAAAAAAABAhExAxIhEzJRYQQFFEFx4fAiI7HR8f/aAAwDAQACEQMRAD8A9xQhCAQhR9IVQijfKcmtJtynYPCUBV1scQBke1t8rkAnoGZ8CrzumpR/iO+pnP8AxWdoqMvAqpzrzS4k/wAjGXOqyNuQb6c88Us1bLka0eBIPazYjMHkK6J0fms/UX/unpfjHfUVHsLjt1NIASZHYY9oqMvIVB+2x7XR/Z+pPwztcMNRwvY2EbhfkNhnjkp9Gfy/sep9Fw3dTSEXEjsf9Co9hd909L8Y76io9hV8YHwW+Qz1KXBG05sYf+xnqVL05P5+y0y2W/dVSDEyOzA7RUZk2H8iV7p6X4x31FR7CcmhiAxjZ5DPUq2Ut2Nb5DPUmPTmRllpO909L8Y76io9hdZulpSbcIceWKZo8Zaq24+C3yGepYbdHJLXVAo4ZOCibd00kbWiTgw8s1QbDFz2ubyDUcTfAKb0tGOXdw9MfumoxgaiPysUg7qqL5RH5V145oiDRTpn0bYZXuZwlnvmnfwjou2ABj+K4WOBaLgXGYV3DudoHlwbCCW21hwtTcEi9jx8DzbEx6Fy4q+npDd1VEf6hnhNvSuO3WUIzqYx0vAC84l3LUeyAfW1HtpmTcrRHOAEZ4yTn0vVvwuXypll28vS/dfQfKovrGro3XUPyqLy2ryx25Kh+TN8ub2k2dy1EMqdvlzX+8rfhM/mK+pHrI3VUXyiPyke6mi+UR+UF5vo7c5Qv4jqcaw28LUcZvL2eane5Gh+Tj62p9tZ37PlLprjNzcbr3U0XyiPygptFpWCbtUrH9Dhdeay7laBoLjTiwBJ/e1OQFz/ADrON0ZA7Wq9EzyNli4zow+YxSAC+p+8uQ4jLEi+zkrelYae8oVDuK06KymbLcFwsHWuBcsa9pscrtc0q+WSAhCEAhCEAhCEAqrdR3M8fN+8D+StVV7pe53+D0q2PuiLwzmkpSyjc5uDmUznDmc2EkecLx11SXWc5xcdUXJOJ1WgW8Vv0F7Dp/uSf/bS/gOXhjK1zb2JGzC2Xi866OophwutBaPNVUMp9bU1tYlxGtYNaScLi+S1m4pkkVZV0heXNibqi41ewk4pAubdsOF9q8/0PpWWCZs8JaHxte4aw1mlrYnFwI23APhW33s6l8tbVSSEF7mvLyBZpcZI72GwKmO9rXh6TCxWDAGC5TdO0AaxyCh1lQXFW13VHtjlTUlxUe6A1L1VrPDLkkLNaDaNed1s+B8XANf6ZHHwrTWWZ0GcZumDqkSie6Nulyeh0RBHK+dkTGyPvrPAs43tfmF7C9s7KVqjkt4E4UlbyabU04JljcxyegqUQmWjjdI84/RV2PUm4jyNTDmqdI1RntVsa54jAkEOGYNx0q+p5g9ocNuzkO0KjcFL0TLZ5Zsdl84D8x6Ao6uO5tr0stXXytCEgC2ScISCuZ1w7vbYCZgyH5VNQweZgHgW2WJ3uc5/1/WVa2y4cuWIQhCgCEIQCEIQCrN0Z/cO6W/eCs1W7oe0npb94K2PMReGW0wb0ch/6WT8By8JpcdcAcbGx1mNaCDiXg4kWuMNtl7rpTuJ/wDtZPwHL52lJ1nY24xzNhmV0ZVXFOhdZ7+9T9XkXoG9A+9VUk/Af+IxeZUr8Xd6n6vIvRt5Yk1NTcWPBm4yseEZgq48py4etyyE9CaEaliJdLLLTemXKKGJLgnpHgKLI9PI45yzOg85voOqRK/cVQaD7Kb6DqkStPdGnTvlbIsgJYC3bItTVxx2D3WJyFnONuUgA2HOcE1U1UbNR7nDVPYkXfrAtJGoG3LsMcL4YrtGP4qo73TeK859JKrGtk4WAwhpe0VLTrktibAZ7CxaCda8bAAMLB18gqXKqZcLUPDgHNIIORBuFXz1sYfwZeA64FsbBxtZpdkHG4sCbm45UUDsHNc7UkE54Vo1dQyvaJNRhIxYWua4EWPLY6wVVUvP7BWG5vbSGN8biaot4rDxK2OXhzaT6mrjYbPeAbX24Nx4zrdi3A4mwwKWHFpDhmCCOkYqBK+bhJ/2cRuxGtwrpG/vxG3itsDduqWcmJPPZ7RrW8DEGFxaI2hut2eqGgDW58MVrjlvwnhrLggEZEXHQck2UmhN4mfNA8WH5JblzcV2y7hW9xnUfr+sq1t1id7jOo/X9ZVrbLgy5ZBCEKAIQhAIQhAKu0/2k/OZ98KxVNuqcREyxzkAPONR59IHiVseUXhRadZakkH/AE0n4Ll83OmAfJcXxcBxg3G5tmMl9Kboe5pf9tJ+A5fND6UudM7CzXOLuM1tgZLDPEnEZArW8RE5rkD+MbfFzfgPXpm8cb1dVj/hno7Y1eWQCzj8yX8F4Xp+8c7+Lqz/AKZ6e2tUY8mXD2p8tslGe4lLc4Jlz1vIx2Q9qaclucmnFSGnLPaE7Kb6DqsS0LlndDHjTfQdUiU4++NOmuGlOtTDSnAVu2MVVBrO12SyROIa1xj4G72NLi1ruEY4YFzrEWPGOKiy0LCQGSvidGzVa5jo3ScGSC4OErXBwJa0kkXvtxN7CZ+B2YbDYjoOxVcGh42i4LhdurmCQ2w1QLi2AHJt5lTLH6KdS6iRFC2MaoNy4kuc5wL3vNgXO58ALAACwAAAAVZUUbHF3753BuLteEOg4BxOLw67C4XvcgOANzym8l+i2AkhzhctdYFgbdpjIFgLW/dtFlXyaAj1NTWfa5dm3NwDTfDEWACmS/Dn8fJ2ootZxcyV8ZJBeIzFZ5AAu7WY6xs0C7bHAcidiiaxrWNADWgBoGQaBYAJNPRtjJIJxvnq7XE3wHPboAT7WFxDRmTZbTx5FxQttEzov4yT+aU5OWAAAyAAHQBYJpy5ebt3YzUOb3GdR4euVa26wm90f3ko2Fr/ADVtRb0nxrdrhy5ZBCEKoEIQgEIQgFS7q+1M74PuPV0qTdZ2pnfB+G9Ww90ReFLp8/wsv+2l/AcvmRlUWvc4WuS6xIa61yb2uMCvqSpbdjBa92AW2EEYhYfSu9fQufr3kaXWOq1zQ1ot0X8eK3uO5NK7814c2XEn/K4eUxzfzuvUN4U61XVk5GIZ8pkarVm9bQn+aXyh6ltNzW5Kn0e1zINYl4HGcQSWgkgYADMnnyuqzGy+TcsaGWD9ZqK+PnQyrLfUU+2Zrs8CtN2K6lQnMKZdf9BWb6bkUaSAqZnDsQHFZ3Q54830HVYlqHx8yyuijx5voOqxK+F3nFsJpbgpWumNdMulLjqtz8wHKV06Xt0e1tZ1tgxPqTznJuNgaLDx7SVxxVb5rmyy7qS9yZcUtxTZzAzJ2bVeIkIcVZaPptXjuzOQ5Bz85/W1cpaO3Gfidg2Dp5T5lKc9ZZ578R0dPp681x7kglBKSs3QXvddsl+bJ12dbtYTe67ZL82Trs63a4cuWIQhCqBCEIBCEIBVW6VoMBNsiCOY5eglWqqd0rjwQHwngHosTh4QFbHlF4V5sGMcdjR41UyzEkk5lWNY791GP8oKpZCurCeNss750ejlsVfQP14/8zPO0rMByt9E1Oq4XyOB6Cmc8GB6obfjDwqO2RWNTDqlQKiK2IUY1Nxp+GsIUtlUDmqa6U19lNwlMc7F2Yg5edUUlpJgAThAcAT/AEsa2lPWELJ6IPGm+g6rEnS3M4tll43DzYXuz4o8bvEpcUYaLD+5POurq67dsbbXCkFLKVHDfE5cnr9Sjek443K6hlkRdlgOU5eDlUyGIMyz2k5ldJSS5Z3K11YdOYnC5ILki6cjZdVaBouuuIGa4ZCTqsHSdn6zUun0e3sn8a2OPYjnt61wfafvHo9C9tu8viNMenllN/kZ3uAC6d3zrdBrKq/oC3Cw+92/jzgZHXPiram1vKW4S3flyhCEKAIQhAIQhAKq3RMJjZzSNJ6LOHpIVqq7Tvaj85v3gpx5FDUm8cZ/yNPmVPIVau7TD3pn3VUSrtx4YZ+6kXUumeoafgKmojVU7uEjBOY4p6dhUeSPYmtDz2dY5OFvCrOoj2+Nc98V0TzFDPFY83oTJVnPHhZVz2WNltjdxlljoi6oNE9lN9B1SJXxVDorspvoOqRK2Pviv5VaBdC4E7BFrG2wZn8ulb26Vk3dR2GO+Jy2c55Utydeo7yst7rtwxmM0SSi64ugKyxTG3Tj8eIPD+f65xyoyH/0gDaSplJCGt1nYbccwOQ8p/MleZ94/a70cNYe/LxP9tOnh3XzxCqaBrG44AcvpKq6yrfUuMUPFYDx5Dl4OUrlTO6qfwcZLYmnjuG3mHKVaQQNY0MaLAZf351zfYPu+dD+51fOd8/p+v1Ot1t+Jwh728Wq+VoxDWvbf/zKi1/EVu1it7zs6npPXatbVdWV3XKEIQoAhCEAhCEAqzdEbQOPO30qzVVunP8ADv8AB6VbHmIvCif2mLvbPuqomVw/tUXe2fdVRKuzHhjnzTSdiKaTjFZWLCnetLTy67QeUY9IWViKutGzbPCsepG+FSKiNV9RHdXEuIv+rqunaq4VbKKl/IVn9FnjS/QdUiWmnYqTc7SNe6Zzr4GEaoNmn+Eiz27eVbTKTKVl2W7iXTxF5s3Zmdg/vzKyDQ0ao/uTylOXAFgAAMgMAo8j1a5XJthhMSJHJgpT3JFlMauBPRs2lEcaktAa10juxYCekjYs+t1Z08d3/t+EybRuEAeA7ZZzuba1vocfByJiad9U7UYdWMdk8ehvKVHpNHyVBL3ktjJvf+d/RfZzrQxQtY0NaLAZALG9HDHOdS+c/wDCtzutQingbG0MYLAfq55SlpRXE3tki73vZ1PSeu1a2ixe972dT0nrlWtosaBCEKAIQhAIQhAKp3U9zSdA9KtlU7qu5pOgelWw90ReFG/tUXe2fdVTKrY9pi72z7oVVKF2RjlyZS2pNkoKyEmMqdTSWVfGpMTlSxfFoYZPP6U1UNUekkwtyKW8g/rasdarbarlCz+559jP0wdUiWlnYsnoV1nTfQdUiWk82GPK8c9NuckA3Sw22JW2tNCdW6caxAdyDD4RB1fNinKKEvcXEtc0ZEa1r9BAufMqZ56SXDHfHEDmzPzfWpDqfWtrgaoyZm3DIu+EdvIOfNSbLhXF23LLvz5nHxP3+quWf5RwrhXSuFaqElcXSkqUI2972dT0nrlWtosXve9nU9J65VraLGgQhCgCEIQCEIQCqN1fcsvQrdVG6vuWXoVsPdEXhRt7TD3pn3Aq2UKxhP8ADwd5j+4FXyrtjLLkwuhCAip1hUiMqM1PMKVaJ9PJZTg5VUblNifcLOxpOD0wusdoVt3S/QdViWv1li9GSkOla0cY8CeYNFJFck7Ewn9UXxq6dKG4DE+IDnJ2JrVkdi0YfCcMP+1p9JU3R+jMLvxGdjgSeV3NyDx4qdUmwste6S6ibWdoaR80ha8ktbi43PgA5ytSxgAAAsBgAMgFG0fEA3WH8xvfm/l9fhUpY9XPuqoKSV1JWQEkrq4VKXCkrq4VKEbe97Op6T1yrW0WL3vezqek9cq1tFjQIQhQBCEIBCEIBVG6vuWXoVuqjdX3LL0K2HuiLwoafueDvMf4YUCVWFL3PB3mP8MJmmjDnEHp7EPNtthb0Ls3plygIQ5ClBbU4wptqW1A+wqVC9QmlPMcoq8qW4ql3KQAuncdhgHipIiPSri9wqvch/j/ADoOpwrO8xdogFDrj/KMzgOkmw9KnMaoQxkvsF/RYenzJPHlKS0WwGz0LqEklZAK4hcUpBSSulcKkcK4hcRCPve9nU9J65VraLF73vZ1PSeuVa2ixoEIQoAhCEAhCEAqjdX3LL0K3VRur7ll6FbD3RF4UVJ3PB3mP8NqTRHjOzyt2LnAi+RthbndglUnc8HeY/wwmYCA65NrYg3b2QxGYO2y67xWcQShBQFdBSU1JCUFCDgKW0psJTSiYlQuUHcj/j/Og6nCpDHJncaO39MHU4VlnzGkaJ7tVpKgUORdynDoH97rulZyS2JuZ83K7wBPMaAABkBYdAUXxP1WKuuISJX2BPIFRJaTdZzTOnDDIYxGHkAaz3hxbrlocGtGzAt8fhVnomt4SON9rB4dhcnVc1xDrE42NiRyJsT1xC4VKAkldXEDG972dT0nrlWtosXve9nU9J65VraLGgQhCgCEIQCEIQCqN1XcsnQrdVG6ruaTwX8JA/NWw90ReFFR9zwd5j+4FClU2k7nh70z7gUKXNdsZmChBQpQUEoJASggWlApASkCwVC3NVeoJ2gXeTDqgZn+Dhx5hzqUFH3KSN16lgIuP2ckbdU0zGg9F43eJZZ+LGmK7pafVu5xu92Z2Acg5k+uXRdZ27XdukyNBBByIsi65dBS1+hI5ZDK/hA82vqAOjdYBt7WJGAta+HnU+gpBG1rGizWAhoJu/E3c5xyuTs6eWwlriaQFxC4SgCUKFprSTaaCWpeC5sTS4httYgbBdVe5TdOK10sZi4N8YaTaThWFr3OaLOLWm92HZa1iCQU2Lre97Op6T1yrW0WH3tZA/h5B2LrkHPA1dU4eZwK3CxoEIQoAhCEAhCEAmK6lEsb4nZOBHRyFPoQYGimdEP2ScasseA+BJGSdV7DlbZzYbcF2SInK3lN9a29VSRyC0jGuAy1mg2PKOQqvdubpTjwX2ko/wCS6J11e1kzTu5B5TfWq2vpqzXHAiLU1cddwDte55NnY+db33M0nxX2k3tI9zNJ8V9pN7SeujtecfsekvhQnssNZobcg2B4t7C4yscMbrr6TSeqQHU97GztbjXJdYi4sLDVzB8ON/Ro9zNI3ERc/ZykX6C5PnQlP8U3z+tPXT2vMH0Oky4kSxAG3FBiNrNs6xLMLnHG+NtlwZtLT1oezhDCY7DWs8GUkNxOwYu5gt0dzFJnwX2k3tLvuZpPivtJvaT1ztZkQu5vKZ6157upqKrRlWytgZrscCyVl9dr4zIXtBti0hznWIywGVwfaPczSfFfaTe0uHcxSHOG/S+UjxFyrl1JlCTTyCDflgsOFpJmO2hro3t8BdqnzJz35qP5PUeKH2l6NU73lE4kjhGX2MkGr4A4GyZ97aj+HN5cfsKnd9Vnn/vy0fyeo+x9pc9+Wj+T1H2PtL0H3tqP4c3ls9ld97aj+HN9Yz2U7r8jzz35aP5PUfY+0j35KP5PUfY+0vSW73tCALtkPOZngnxYJuXe5oibgyt5hJcf+wJTuvyPOffko/k9R9j7S578lJ8nqPsfaXoo3t6P4U31jPZSm73FENsp6ZB+QTu+o82k34KJwLXU0zgcCCIC0jkIJxVXXbvJZ2Pp9G0PAcLZhm1WB1jgbBrbA2JxuSMbYr173uqL/V+t/srPRe5OkgIcyK7heznudI4X6U7hC3udBGko2MeLOdqkgm5a1rGsa3xNv0uK1KEKgEIQgEIQgEIQgEIQgEIQgEIQgEIQgEIQgEIQgEIQgEIQgEIQgEIQgEIQgEIQgEIQgEIQg//Z" alt="Huawei"/></td>
+                <td>Amazon</td>
+                <td>500</td>
+                <td>20.500.500</td>
+                <td>10.250.250.000</td>
+                <td>Đường hàng không</td>
+            </tr>
+            <tr>
+                <td>8</td>
+                <td>Samsung Galaxy Fold</td>
+                <td><img src="https://ngocthanhmobile.com/uploads/2020/02/avt-galaxy-fold-den.png" alt="Samsung"/></td>
+                <td>Lazada</td>
+                <td>25</td>
+                <td>50.000.000</td>
+                <td>1.250.000.000</td>
+                <td>Đường bộ</td>
+            </tr>
+            <tr>
+                <td>9</td>
+                <td>iPad Pro 11 inch</td>
+                <td><img src="https://product.hstatic.net/1000169499/product/ipad-pro-11-2018-space_gray_93087c88cb784d84a497ecd9a4fe1b17.png" alt="iPad"/></td>
+                <td>h2shop</td>
+                <td>40</td>
+                <td>21.990.000</td>
+                <td>879.600.000</td>
+                <td>Đường bộ</td>
+            </tr>
+            <tr>
+                <td>10</td>
+                <td>Smart TV QLED 8k 98 inch</td>
+                <td><img src="https://media3.scdn.vn/img3/2019/7_12/nnHz5p_simg_de2fe0_500x500_maxb.png" alt="qled tv samsung 8k 98 inch"/></td>
+                <td>FPT Shop</td>
+                <td>5</td>
+                <td>1.490.000.000</td>
+                <td>7.450.000.000</td>
+                <td>Đường bộ</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

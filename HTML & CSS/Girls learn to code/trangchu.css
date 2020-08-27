@@ -4,6 +4,7 @@
     justify-content: space-around;
     display: flex;
     margin-top: 13px;
+    margin-left: 390px;
     margin-right: 100px;
     float: right;
 }
@@ -12,22 +13,21 @@ a {
     text-transform: capitalize;
     font-size: 24px;
     text-decoration: none;
-    font-family: sans-serif
+    font-family: sans-serif;
+    transition-duration: 0.5s;
 }
-.flex {
-    display: flex;
-}
-.space {
-    margin-left: 160px;
-}
-p {
-    font-size: 19px;
+.description {
+    font-size: 17px;
+    margin-top: 20px;
 }
 a:hover {
     color: #378B9B;
     transition-duration: 0.5s;
     animation-duration: 1s;
     animation-name: gachchan;
+}
+.img {
+    width: 270px;
 }
 @keyframes gachchan {
     0% {
@@ -36,4 +36,15 @@ a:hover {
     100% {
         border-bottom: 3px solid #378B9B
     }
+}
+.center {
+    text-align: center;
+}
+.box {
+    width: 20%;
+    margin: 15px;
+    box-shadow: 0 0 3px rgba(0,0,0,0.3);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: 0.5s
 }
