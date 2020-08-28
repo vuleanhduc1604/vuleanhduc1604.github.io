@@ -13,7 +13,7 @@ a {
     text-transform: capitalize;
     font-size: 24px;
     text-decoration: none;
-    font-family: sans-serif;
+    font-family: 'Prompt';
     transition-duration: 0.5s;
 }
 .description {
