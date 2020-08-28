@@ -1,3 +1,8 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 .container {
     width: 95%;
     padding: 10px;
@@ -68,8 +73,8 @@ h2 {
     background-color: #378B9B;
     width: 40%;
     color: white;
-    margin-bottom: 20px;
-    margin-left: 20px;
+    margin: auto;
+    margin-bottom: 30px;
 }
 p {
     cursor: pointer;
