@@ -1,0 +1,79 @@
+.container {
+    width: 95%;
+    padding: 10px;
+    justify-content: space-around;
+    display: flex;
+    margin-top: 13px;
+    margin-left: 390px;
+    margin-right: 100px;
+    float: right;
+}
+a {
+    color: black;
+    text-transform: capitalize;
+    font-size: 24px;
+    text-decoration: none;
+    font-family: 'Prompt';
+    transition-duration: 0.5s;
+}
+.description {
+    font-size: 27px;
+    margin-top: 0px;
+    font-family: 'Cabin'
+}
+a:hover {
+    color: #378B9B;
+    transition-duration: 0.5s;
+    animation-duration: 1s;
+    animation-name: gachchan;
+}
+.img {
+    width: 270px;
+}
+@keyframes gachchan {
+    0% {
+        border-bottom: 3px solid transparent;
+    }
+    100% {
+        border-bottom: 3px solid #378B9B
+    }
+}
+.center {
+    text-align: center;
+}
+.box {
+    width: 278.328px;
+    margin: 15px;
+    box-shadow: 0 0 3px rgba(0,0,0,0.3);
+    transition: 0.5s;
+    overflow: hidden;
+    text-align: center;
+}
+.box:hover {
+    box-shadow: 3px 3px 3px 3px rgba(0,0,0,0.3)
+}
+h2 {
+    font-family: 'Cabin';
+    color: #378B9B
+}
+.sub-description {
+    font-family: 'Cabin';
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+.more {
+    font-size: 20px;    
+    font-family: 'Cabin';
+    background-color: #378B9B;
+    width: 40%;
+    color: white;
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
+p {
+    cursor: pointer;
+}
+.img-description {
+    width: 100%;
+}
