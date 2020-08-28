@@ -32,9 +32,6 @@ a:hover {
     animation-duration: 1s;
     animation-name: gachchan;
 }
-.img {
-    width: 270px;
-}
 @keyframes gachchan {
     0% {
         border-bottom: 3px solid transparent;
