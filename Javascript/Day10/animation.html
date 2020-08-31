@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <canvas id="canvas"></canvas>
+    <script>
+        const canvas = document.getElementById('canvas')
+        canvas.width = innerWidth * 0.9
+        canvas.height = innerHeight * 0.9
+        canvas.style.border = '2px solid black'
+        const ctx = canvas.getContext('2d')
+
+        class Circle {
+            constructor(x,y,radius,color) {
+                this.x = x;
+                this.y = y;
+                this.radius = radius;
+                this.color = color
+            }
+
+            draw() {
+                ctx.beginPath();
+                ctx.fillStyle = this.color
+                ctx.arc(this.x, this.y, this.radius, 0, Math.PI*2, false);
+                ctx.stroke();
+                ctx.fill();
+            }
+        }
+            // Khởi tạo 1 hình tròn
+            let circle = new Circle(100, 100, 50, 'red')
+            circle.draw()
+    </script>
+</body>
+</html>
