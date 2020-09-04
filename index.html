@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="button">
+        <button id="button1">Vẽ hình tròn</button>
+        <button id="button2">Vẽ hình tròn random</button>
+        <button id="button3">Vẽ hình chữ nhật</button>
+        <button id="button4">Vẽ text</button>
+        <input id="text" type="text" placeholder="Nhập Text">
+        <button id="button5">Clear</button>
+    </div>
+    <div>
+        <canvas id="canvas"></canvas>
+    </div>
+    <script>
+        const canvas = document.getElementById('canvas')
+        let width = canvas.width = innerWidth * 0.9
+        let height = canvas.height = innerHeight * 0.9
+        canvas.style.border = '2px solid #000'
+
+        addEventListener("resize", function () {
+            canvas.width = innerWidth * 0.9;
+            canvas.height = innerHeight * 0.9;
+        });
+        const ctx = canvas.getContext('2d')
+        document.getElementById("button1").addEventListener("click", drawCircle)
+        function drawCircle() {
+            ctx.beginPath();
+            ctx.fillStyle="blue";
+            ctx.arc(Math.random() * width, Math.random() * height, 50, 0, Math.PI * 2)
+            ctx.fill()
+        }
+        document.getElementById('button2').addEventListener("click", drawCircleRandom)
+        function drawCircleRandom() {
+            ctx.beginPath()
+            ctx.fillStyle="red";
+            ctx.arc(Math.random() * width, Math.random() * height, 50, 0, Math.PI * 2)
+            ctx.fill()
+            ctx.beginPath()
+            ctx.fillStyle="black";
+            ctx.arc(Math.random() * width, Math.random() * height, 50, 0, Math.PI * 2)
+            ctx.fill()
+            ctx.beginPath()
+            ctx.fillStyle="purple";
+            ctx.arc(Math.random() * width, Math.random() * height, 50, 0, Math.PI * 2)
+            ctx.fill()
+            ctx.beginPath()
+            ctx.fillStyle="yellow";
+            ctx.arc(Math.random() * width, Math.random() * height, 50, 0, Math.PI * 2)
+            ctx.fill()
+            ctx.beginPath()
+            ctx.fillStyle="gray";
+            ctx.arc(Math.random() * width, Math.random() * height, 50, 0, Math.PI * 2)
+            ctx.fill();
+        }
+        document.getElementById('button3').addEventListener("click", drawRect)
+        function drawRect() {
+            ctx.fillStyle='#0F0F0F';
+            ctx.rect(Math.random() * width, Math.random() * height, 200, 100);
+            ctx.fill();
+        }
+        document.getElementById('button4').addEventListener("click", drawText)
+        function drawText() {
+            var getValue = document.getElementById('text').value;
+            ctx.font = "20px Georgia";
+            ctx.fillText(getValue, Math.random() * width, Math.random() * height);
+        }
+        document.getElementById('button5').addEventListener('click', clearAll)
+        function clearAll() {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <canvas id="canvas"></canvas>
+    <script>
+        const canvas = document.getElementById('canvas')
+        canvas.width = innerWidth * 0.9
+        canvas.height = innerHeight * 0.9
+        canvas.style.border = '2px solid #000'
+        addEventListener('resize', function() {
+            canvas.width = innerWidth * 0.9;
+            canvas.height = innerHeight * 0.9;
+        })
+        const ctx = canvas.getContext('2d')
+        class Ball {
+            constructor(radius, color, x, y) {
+                this.radius = radius;
+                this.color = color;
+                this.x = x;
+                this.y = y;
+            }
+
+            draw() {
+                c.beginPath();
+                c.arc(this.x, this.y, this.radius, 0, Math.PI * 2, false);
+                c.fillStyle = this.color;
+                c.fill();
+                c.stroke();
+                c.closePath();
+            }
+        }
+        function rgb() {
+            
+        }
+    </script>
+</body>
+</html>
